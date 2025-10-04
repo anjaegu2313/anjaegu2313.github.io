@@ -85,7 +85,7 @@ facebook:
   username               :              # 페북 사용자명
   app_id                 :              # 앱 ID
   publisher              :              # 퍼블리셔 ID
-og_image                 :              # 기본 OG 이미지. 예: "/assets/images/og.png"
+og_image                 : "https://i.namu.wiki/i/BgI5EixqqH_IaLJwAYXjUkl0lVGqh9ioPRd9lcSulQtej3jPZUNiD6uyLG3FXDyU8gWr4es0VM2AaFdltd0BRbCptWwHxYFU0zotfJX5pD_J4Lo0L9osWDDtsIwpoj1-6J_NLW4eMkKAcDdjVsc37w.webp"         # 기본 OG 이미지. 예: "/assets/images/og.png"
 social:
   type                   : Person       # "Person" 또는 "Organization"
   name                   : "안재겸"       # 구조화 데이터용 이름
