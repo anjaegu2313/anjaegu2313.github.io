@@ -1,121 +1,121 @@
 # Welcome to Jekyll!
 
 # Theme Settings (9번: 스킨은 건드리지 않음)
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default"  # 사이트 전반 색상/톤 스킨. 예: "dark", "mint", "sunrise" 로 교체 가능
 
 # Site Settings (1~5 중 사이트 기본정보 반영)
-locale                   : "ko-KR"
-rtl                      :
-title                    : "AJG 포트폴리오"
-title_separator          : "-"
-subtitle                 : "Game Dev • AI+DSL • Portfolio"
-name                     : "안재겸"
-description              : "게임 개발과 AI+DSL을 연구하는 개발자의 포트폴리오 블로그."
-url                      : "https://dksworua12.github.io"  # GitHub Pages 기본 도메인
-baseurl                  : ""                               # 사용자/organization 페이지면 공백
-repository               : "dksworua12/dksworua12.github.io"
-teaser                   : "/assets/images/teaser-500x300.png"  # 기본 썸네일(원하면 교체)
-logo                     : "/assets/images/logo.png"            # 상단 로고(원하면 교체)
-masthead_title           :
-breadcrumbs              :
-words_per_minute         : 200
-enable_copy_code_button  :
-copyright                : "© 2025 안재겸"
-copyright_url            : "https://dksworua12.github.io"
+locale                   : "ko-KR"    # 언어/로케일. 한국어: "ko-KR", 영어: "en-US"
+rtl                      :            # RTL 언어 사용 여부. 아랍어·히브리어면 true
+title                    : "AJG 포트폴리오"  # 브라우저 탭/헤더에 보이는 사이트 제목. 예: "안재겸 포트폴리오"
+title_separator          : "-"        # 제목과 페이지명 구분자. 예: "•" 또는 "|"
+subtitle                 : "Game Dev • AI+DSL • Portfolio"  # 제목 아래 부제. 예: "Unity • Network • UI/UX"
+name                     : "안재겸"     # 사이트 소유자/브랜드명. 예: "AJG"
+description              : "게임 개발과 AI+DSL을 연구하는 개발자의 포트폴리오 블로그."  # 검색·공유 요약 문구
+url                      : "https://dksworua12.github.io"  # 사이트 기본 URL. 사용자 페이지는 이 형태
+baseurl                  : ""         # 서브 디렉토리 배포시 "/blog" 등. 사용자 페이지는 공백 유지
+repository               : "dksworua12/dksworua12.github.io"  # 깃허브 repo 경로. 예: "user/user.github.io"
+teaser                   : "/assets/images/teaser-500x300.png"  # 포스트 기본 썸네일. 예: "/assets/images/og.png"
+logo                     : "/assets/images/logo.png"  # 헤더 로고. 없으면 주석 처리하거나 경로 교체
+masthead_title           :              # 헤더 타이틀 오버라이드. 공백이면 기본 title 사용. 예: "AJG"
+breadcrumbs              :              # true면 상단 breadcrumb 표시. 예: true
+words_per_minute         : 200          # 읽기 시간 추정 기준 WPM. 예: 180
+enable_copy_code_button  :              # 코드블록에 복사 버튼. 예: true
+copyright                : "© 2025 안재겸"  # 푸터 저작권 표기. 예: "© 2023 AJG"
+copyright_url            : "https://dksworua12.github.io"  # 저작권 링크 URL. 예: 회사/개인 홈페이지
 
 # (8번 댓글, 7번 SEO, 6번 SNS 링크는 유지/미설정)
 comments:
-  provider               :
+  provider               :              # 댓글 시스템 선택. 예: "giscus", "utterances", "disqus"
   disqus:
-    shortname            :
+    shortname            :              # Disqus 단축명
   discourse:
-    server               :
+    server               :              # Discourse 포럼 주소. 예: "https://meta.discourse.org"
   facebook:
-    appid                :
-    num_posts            :
-    colorscheme          :
+    appid                :              # FB App ID
+    num_posts            :              # 표기 댓글 수. 예: 5
+    colorscheme          :              # "light" 또는 "dark"
   utterances:
-    theme                :
-    issue_term           :
+    theme                :              # "github-light", "github-dark" 등
+    issue_term           :              # "pathname" 등 매칭 방식
   giscus:
-    repo_id              :
-    category_name        :
-    category_id          :
-    discussion_term      :
-    reactions_enabled    :
-    theme                :
-    strict               :
-    input_position       :
-    emit_metadata        :
-    lang                 :
-    lazy                 :
+    repo_id              :              # giscus 설정값
+    category_name        :              # 예: "General"
+    category_id          :              # giscus 카테고리 ID
+    discussion_term      :              # "pathname"|"url"|"title"|"og:title"
+    reactions_enabled    :              # '1' 또는 '0'
+    theme                :              # "light", "dark", "transparent_dark" 등
+    strict               :              # 1 또는 0
+    input_position       :              # "top"|"bottom"
+    emit_metadata        :              # 1 또는 0
+    lang                 :              # "ko" 등
+    lazy                 :              # true|false
   staticman:
-    branch               :
-    endpoint             :
+    branch               :              # Staticman 브랜치. 예: "master"
+    endpoint             :              # Staticman v3 엔드포인트
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey                :              # reCAPTCHA v2/3 site key
+  secret                 :              # reCAPTCHA secret
 atom_feed:
-  path                   :
-  hide                   :
-search                   :
-search_full_content      :
-search_provider          : lunr
+  path                   :              # RSS 피드 경로. 예: "/feed.xml"
+  hide                   :              # 피드 숨김 여부. 예: true
+search                   :              # 내장 검색 on/off. 예: true
+search_full_content      :              # 전체 본문 인덱싱. 예: true
+search_provider          : lunr         # 검색 엔진. 기본 lunr. 알골리아 쓰면 "algolia"
 lunr:
-  search_within_pages    :
+  search_within_pages    :              # 페이지 내부 검색 허용. 예: true
 algolia:
-  application_id         :
-  index_name             :
-  search_only_api_key    :
-  powered_by             :
+  application_id         :              # 알골리아 App ID
+  index_name             :              # 인덱스명
+  search_only_api_key    :              # Search-only 키
+  powered_by             :              # "Powered by Algolia" 표시. 예: false
 google:
-  search_engine_id       :
-  instant_search         :
+  search_engine_id       :              # CSE ID
+  instant_search         :              # 즉시검색 on/off. 예: true
 # SEO Related
-google_site_verification :
-bing_site_verification   :
-naver_site_verification  :
-yandex_site_verification :
-baidu_site_verification  :
+google_site_verification :              # 구글 서치 콘솔 인증 코드
+bing_site_verification   :              # Bing 웹마스터 인증 코드
+naver_site_verification  :              # 네이버 서치어드바이저 인증 코드
+yandex_site_verification :              # 얀덱스 인증 코드
+baidu_site_verification  :              # 바이두 인증 코드
 
 # Social Sharing (6번 범주: 비워둠)
 twitter:
-  username               :
+  username               :              # 트위터 아이디. 예: "ajg_dev"
 facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 :
+  username               :              # 페북 사용자명
+  app_id                 :              # 앱 ID
+  publisher              :              # 퍼블리셔 ID
+og_image                 :              # 기본 OG 이미지. 예: "/assets/images/og.png"
 social:
-  type                   : Person
-  name                   : "안재겸"
-  links: []
+  type                   : Person       # "Person" 또는 "Organization"
+  name                   : "안재겸"       # 구조화 데이터용 이름
+  links: []                             # 소셜 링크 배열. 예: [{label, icon, url}]
 
 # Analytics (미설정)
 analytics:
-  provider               :
+  provider               :              # "google", "google-gtag" 등
   google:
-    tracking_id          :
-    anonymize_ip         :
+    tracking_id          :              # GA ID. 예: "G-XXXXXXX"
+    anonymize_ip         :              # IP 익명화. 예: true
 
 # Site Author (1~5: 작성자 정보 반영)
 author:
-  name             : "안재겸"
-  avatar           : "/assets/images/profile.jpg"  # 프로필 이미지 경로
-  bio              : "게임 개발과 AI+DSL 연구를 병행하는 개발자. Pac-Man 콘솔→웹 포트, 탄막 슈팅, 네트워크 격투 프로젝트를 정리합니다."
-  location         : "Seoul, Korea"
-  email            :
-  links: []  # 6번 제외: 외부 링크 미노출
+  name             : "안재겸"                           # 작성자 이름
+  avatar           : "https://i.namu.wiki/i/BgI5EixqqH_IaLJwAYXjUkl0lVGqh9ioPRd9lcSulQtej3jPZUNiD6uyLG3FXDyU8gWr4es0VM2AaFdltd0BRbCptWwHxYFU0zotfJX5pD_J4Lo0L9osWDDtsIwpoj1-6J_NLW4eMkKAcDdjVsc37w.webp"       # 프로필 이미지 경로(절대경로 권장)
+  bio              : "게임 개발과 AI+DSL 연구를 병행하는 개발자. Pac-Man 콘솔→웹 포트, 탄막 슈팅, 네트워크 격투 프로젝트를 정리합니다."  # 사이드바 소개
+  location         : "Seoul, Korea"                     # 위치 표기. 예: "Namyangju, Korea"
+  email            : ajg060326@gmail.com                # 연락 이메일. 노출 원치 않으면 빈값
+  links: []                                            # 저자 카드에 표시할 링크 리스트. 예: GitHub, 포폴
 
 # Site Footer (5: 푸터 시작연도 갱신)
 footer:
-  links: []  # 6번 제외: SNS 아이콘 제거
-  since: "2025"
+  links: []                     # 푸터 아이콘 링크 리스트. 예: GitHub, Instagram
+  since: "2025"                 # 시작 연도. 예: "2023"
 
 # Reading Files
 include:
   - .htaccess
-  - _pages
+  - _pages                   # pages 폴더 포함. 고정 페이지 만들 때 사용
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -143,48 +143,48 @@ exclude:
   - README
   - tmp
   - /docs
-  - /test
+  - /test                   # 빌드 제외 목록. 빌드에 포함하려면 여기서 지움
 keep_files:
   - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+  - .svn                    # _site에 남겨둘 파일/폴더 지정
+encoding: "utf-8"           # 인코딩
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"  # 마크다운 확장자
 
 # Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
+markdown: kramdown          # 마크다운 엔진
+highlighter: rouge          # 코드 하이라이터(rouge)
+lsi: false                  # 관련 포스트 추천에 LSI 사용
+excerpt_separator: "\n\n"   # 요약 분리자. 본문에 명시하면 앞부분이 excerpt
+incremental: false          # 증분 빌드. 로컬 속도 개선시 true
 
 # Markdown Processing
 kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
+  input: GFM                # GitHub Flavored Markdown
+  hard_wrap: false          # 줄바꿈 자동 변환 여부
+  auto_ids: true            # 헤딩에 자동 id 부여
   footnote_nr: 1
   entity_output: as_char
-  toc_levels: 1..6
+  toc_levels: 1..6          # 목차 포함 헤딩 레벨
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
 # Sass/SCSS
 sass:
-  sass_dir: _sass
-  style: compressed
+  sass_dir: _sass           # sass 디렉토리
+  style: compressed         # 출력 스타일. "expanded"로 바꾸면 가독성↑
 
 # Outputting
-permalink: /:categories/:title/
-timezone: "Asia/Seoul"
+permalink: /:categories/:title/  # 포스트 URL 구조. 예: "/:year/:month/:day/:title/"
+timezone: "Asia/Seoul"           # 타임존. 예: "UTC", "Asia/Tokyo"
 
 # Pagination with jekyll-paginate
-paginate: 5
-paginate_path: /page:num/
+paginate: 5                 # 메인 리스트 페이지당 포스트 수
+paginate_path: /page:num/   # 페이지네이션 경로 패턴
 
 # Pagination with jekyll-paginate-v2 (비활성)
 pagination:
   debug: false
-  collection: 'posts'
+  collection: 'posts'       # 컬렉션 대상
   per_page: 10
   permalink: '/page/:num/'
   title: ':title - page :num'
@@ -200,42 +200,42 @@ pagination:
 
 # Plugins
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
+  - jekyll-paginate         # 기본 페이지네이션
+  - jekyll-sitemap          # sitemap.xml 자동 생성
+  - jekyll-gist             # GitHub Gist 임베드
+  - jekyll-feed             # RSS 피드 생성
+  - jekyll-include-cache    # include 캐싱으로 빌드속도 개선
 
 whitelist:
   - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
+  - jekyll-include-cache    # --safe 모드에서 허용 플러그인 목록
 
 # Archives
 category_archive:
-  type: liquid
-  path: /categories/
+  type: liquid              # 카테고리 아카이브 생성 방식
+  path: /categories/        # 카테고리 인덱스 경로
 tag_archive:
   type: liquid
-  path: /tags/
+  path: /tags/              # 태그 인덱스 경로
 
 # HTML Compression
 compress_html:
-  clippings: all
+  clippings: all            # HTML 압축 설정
   ignore:
-    envs: development
+    envs: development       # 개발 환경에서는 압축 비활성
 
 # Defaults
 defaults:
   - scope:
-      path: ""
-      type: posts
+      path: ""              # 전체 경로
+      type: posts           # posts 컬렉션에 기본값 적용
     values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments:
-      share: true
-      related: true
+      layout: single        # 기본 레이아웃
+      author_profile: true  # 포스트에 author 프로필 표시
+      read_time: true       # 읽기 시간 표시
+      comments:             # 댓글 on/off. 예: true (provider 설정 필요)
+      share: true           # 공유 버튼 표시
+      related: true         # 연관 포스트 표시
